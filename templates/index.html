@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block content %}
+<h1>Hi, {{user.nickname}}!</h1>
+<form action="/handle" method="post" name="handle">
+    First Number:<br>
+   <input type="number" value="firstnumber">
+    <br>
+    Seconde Number:<br>
+    <input type="number" value="secondnumber"><br>
+    <p><input type="submit" value="submit"></p>
+</form>
+{% endblock %}
